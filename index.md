@@ -1,9 +1,9 @@
 ---
 layout: page
-title: MTECH Notes
+title: Mtech Seminal Notes
 ---
 
-# MTECH Notes
+# Mtech Seminal Notes
 
 This collection is organized for GitHub Pages with one landing page and one page per topic.
 
