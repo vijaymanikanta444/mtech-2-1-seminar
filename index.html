@@ -1,0 +1,211 @@
+---
+layout: default
+title: Mtech Seminal Notes
+---
+
+<style>
+  .hero {
+    padding: 2.5rem 0 1rem;
+  }
+
+  .hero h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(2.2rem, 4vw, 3.8rem);
+    letter-spacing: -0.04em;
+  }
+
+  .hero p {
+    max-width: 62ch;
+    color: #5b5b5b;
+    font-size: 1.08rem;
+    line-height: 1.65;
+  }
+
+  .section {
+    margin: 2.25rem 0 3rem;
+  }
+
+  .section h2 {
+    margin: 0 0 1rem;
+    font-size: 1.35rem;
+    letter-spacing: -0.02em;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+
+  .note-card {
+    display: block;
+    padding: 1.1rem 1.1rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  }
+
+  .note-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+  }
+
+  .note-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.02rem;
+    line-height: 1.35;
+  }
+
+  .note-card p {
+    margin: 0;
+    color: #666;
+    line-height: 1.55;
+    font-size: 0.96rem;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #7a7a7a;
+  }
+</style>
+
+<div class="hero">
+  <span class="eyebrow">Mtech Seminal Notes</span>
+  <h1>Mtech Seminal Notes</h1>
+  <p>
+    A curated set of study notes across AI, cybersecurity, cloud, quantum, Web3,
+    and frontier computing. Open any card to read the full note.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Artificial Intelligence and Machine Learning</h2>
+  <div class="card-grid">
+    <a class="note-card" href="{{ '/01_Artificial_Intelligence_and_Machine_Learning/01_Large_Language_Models/' | relative_url }}">
+      <h3>Large Language Models and the Future of Human-Computer Interaction</h3>
+      <p>Transformer architecture, scaling laws, prompting, and current LLM trends.</p>
+    </a>
+    <a class="note-card" href="{{ '/01_Artificial_Intelligence_and_Machine_Learning/02_Federated_Learning/' | relative_url }}">
+      <h3>Federated Learning — Privacy-Preserving Machine Learning at Scale</h3>
+      <p>Training across devices without centralizing raw data.</p>
+    </a>
+    <a class="note-card" href="{{ '/01_Artificial_Intelligence_and_Machine_Learning/03_Explainable_AI/' | relative_url }}">
+      <h3>Explainable AI (XAI) — Making Black Box Models Transparent</h3>
+      <p>LIME, SHAP, and attention visualization for interpretable systems.</p>
+    </a>
+    <a class="note-card" href="{{ '/01_Artificial_Intelligence_and_Machine_Learning/04_AI_Agents_and_Autonomous_Systems/' | relative_url }}">
+      <h3>AI Agents and Autonomous Systems — Beyond Chatbots</h3>
+      <p>Multi-agent systems, tool use, and autonomous workflows.</p>
+    </a>
+    <a class="note-card" href="{{ '/01_Artificial_Intelligence_and_Machine_Learning/05_Neuromorphic_Computing/' | relative_url }}">
+      <h3>Neuromorphic Computing — Brain-Inspired Chip Architecture</h3>
+      <p>Energy-efficient hardware inspired by biological neurons.</p>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Cybersecurity and Privacy</h2>
+  <div class="card-grid">
+    <a class="note-card" href="{{ '/02_Cybersecurity_and_Privacy/01_Zero_Trust_Architecture/' | relative_url }}">
+      <h3>Zero Trust Architecture — Never Trust, Always Verify</h3>
+      <p>Identity-first security for cloud-native enterprises.</p>
+    </a>
+    <a class="note-card" href="{{ '/02_Cybersecurity_and_Privacy/02_Adversarial_Attacks/' | relative_url }}">
+      <h3>Adversarial Attacks on Deep Learning Models</h3>
+      <p>How tiny perturbations can mislead machine learning models.</p>
+    </a>
+    <a class="note-card" href="{{ '/02_Cybersecurity_and_Privacy/03_Homomorphic_Encryption/' | relative_url }}">
+      <h3>Homomorphic Encryption — Computing on Encrypted Data</h3>
+      <p>Privacy-preserving computation without exposing plaintext.</p>
+    </a>
+    <a class="note-card" href="{{ '/02_Cybersecurity_and_Privacy/04_Quantum_Cryptography/' | relative_url }}">
+      <h3>Quantum Cryptography and Post-Quantum Security Standards</h3>
+      <p>Preparing security systems for post-quantum threats.</p>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Cloud, Edge, and Distributed Systems</h2>
+  <div class="card-grid">
+    <a class="note-card" href="{{ '/03_Cloud_Edge_and_Distributed_Systems/01_Edge_AI/' | relative_url }}">
+      <h3>Edge AI — Running Intelligence at the Device Level</h3>
+      <p>TinyML, quantization, and on-device inference.</p>
+    </a>
+    <a class="note-card" href="{{ '/03_Cloud_Edge_and_Distributed_Systems/02_Serverless_Computing/' | relative_url }}">
+      <h3>Serverless Computing and Function-as-a-Service (FaaS) Architecture</h3>
+      <p>Event-driven compute and the economics of cold starts.</p>
+    </a>
+    <a class="note-card" href="{{ '/03_Cloud_Edge_and_Distributed_Systems/03_Digital_Twins/' | relative_url }}">
+      <h3>Digital Twins — Virtual Replicas of Physical Systems</h3>
+      <p>Simulation and predictive maintenance with real-time models.</p>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Quantum and Next Gen Computing</h2>
+  <div class="card-grid">
+    <a class="note-card" href="{{ '/04_Quantum_and_Next_Gen_Computing/01_Quantum_Machine_Learning/' | relative_url }}">
+      <h3>Quantum Machine Learning — Where Quantum Meets AI</h3>
+      <p>Current limits and near-term opportunities in QML.</p>
+    </a>
+    <a class="note-card" href="{{ '/04_Quantum_and_Next_Gen_Computing/02_Neuromorphic_and_In_Memory_Computing/' | relative_url }}">
+      <h3>Neuromorphic and In-Memory Computing</h3>
+      <p>Reducing the von Neumann bottleneck with new hardware paradigms.</p>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Web3, Blockchain, and Decentralized Systems</h2>
+  <div class="card-grid">
+    <a class="note-card" href="{{ '/05_Web3_Blockchain_and_Decentralized_Systems/01_Decentralized_AI/' | relative_url }}">
+      <h3>Decentralized AI — Blockchain Meets Machine Learning</h3>
+      <p>Governance, incentives, and distributed AI systems.</p>
+    </a>
+    <a class="note-card" href="{{ '/05_Web3_Blockchain_and_Decentralized_Systems/02_Smart_Contracts_and_DAOs/' | relative_url }}">
+      <h3>Smart Contracts and Decentralized Autonomous Organizations (DAOs)</h3>
+      <p>Self-executing contracts and blockchain-based coordination.</p>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Domain-Specific Emerging Tech</h2>
+  <div class="card-grid">
+    <a class="note-card" href="{{ '/06_Domain_Specific_Emerging_Tech/01_AI_in_Healthcare/' | relative_url }}">
+      <h3>AI in Healthcare — Medical Imaging, Drug Discovery, and Diagnostics</h3>
+      <p>Clinical AI, drug discovery, and ethical deployment.</p>
+    </a>
+    <a class="note-card" href="{{ '/06_Domain_Specific_Emerging_Tech/02_Generative_AI_for_Code/' | relative_url }}">
+      <h3>Generative AI for Code — GitHub Copilot, Code Llama and the Future of Software Development</h3>
+      <p>How code generation is changing software engineering.</p>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Frontier and Interdisciplinary</h2>
+  <div class="card-grid">
+    <a class="note-card" href="{{ '/07_Frontier_and_Interdisciplinary/01_Brain_Computer_Interfaces/' | relative_url }}">
+      <h3>Brain-Computer Interfaces — Neuralink and the Convergence of Neuroscience and Computing</h3>
+      <p>Neural interfaces, signal processing, and ethical concerns.</p>
+    </a>
+    <a class="note-card" href="{{ '/07_Frontier_and_Interdisciplinary/02_Sustainable_AI/' | relative_url }}">
+      <h3>Sustainable AI — Green Computing and the Carbon Footprint of Large Models</h3>
+      <p>Energy-efficient ML, distillation, pruning, and responsible AI.</p>
+    </a>
+  </div>
+</div>
