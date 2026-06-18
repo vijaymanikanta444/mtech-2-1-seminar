@@ -1,0 +1,11 @@
+title: MTECH Emerging Tech Notes
+description: A curated set of notes on AI, security, cloud, quantum, Web3, and frontier computing.
+theme: minima
+markdown: kramdown
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
